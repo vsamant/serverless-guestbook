@@ -6,7 +6,7 @@ const guestbook = {
   // retrieve the existing guestbook entries
   get() {
     return $.ajax({
-      type: 'POST',
+      type: 'GET',
       url: `${apiUrl}/read-guestbook-entries-sequence`,
       dataType: 'json'
     });
